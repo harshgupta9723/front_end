@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<style>
+	body {background-color: powderblue;}
+	h1    {color: red;
+	text-align: center;}
+
+	table, th, td {
+  		border: 1px solid black;
+		}
+
+	.table_1 {
+  		margin-left: auto;
+  		margin-right: auto;
+		}
+
+	td { 
+	    text-align: right;
+	    }
+</style>
+
+<h1 id="title">Good Vibes Form</h1>
+
+<style>
+
+.city {
+  background-color: tomato;
+  color: blue;
+  border: 2px solid black;
+
+  margin: 20px;
+  padding: 20px;
+}
+
+</style>
+
+<div class="city">
+<h2>London</h2>
+<p>London is the capital of England.</p>
+</div> 
+
+<div class="city">
+<h2>Paris</h2>
+<p>Paris is the capital of France.</p>
+</div>
+
+<div class="city">
+<h2>Tokyo</h2>
+<p>Tokyo is the capital of Japan.</p>
+</div>
+
+
+<form>
+
+  <label for="fname">First name:</label><br>
+  <input type="text" name="fname"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" name="lname"><br><br>
+
+  <label for="gender">Gender:</label>
+
+  <input type="radio" id="male" value="male" name="gender">
+  <label for="male">male</label>
+
+  <input type="radio" id="female" value="female" name="gender">
+  <label for="female">female</label><br>
+
+  <label for="birthday">Birthday:</label>
+  <input type="date" id="birthday" name="birthday"><br><br>
+
+  <label for="employ_type">Self employ:</label><br>
+
+  <label for="employ_type">Job:</label>
+  <input type="radio" id="job" value="job" name="employ_type">
+
+  <label for="employ_type">Self_emp:</label>
+  <input type="radio" id="self_emp" value="Self employ" name="employ_type"><br><br>
+
+  <label for="pincode">pincode:</label>
+  <input type="text" id="pin" value="pincode" name="pincode" required minlength="6" maxlength="6" size="10">
+
+  <select>
+    <option disabled selected value>--</option>
+    <option>Option 1</option>
+    <option>Option 2</option>
+    <option>Option 3</option>
+  </select><br><br>
+
+  <table class="table_1">
+    <caption>Monthly savings</caption>
+    <tr>
+      <th>Name</th>
+      <th>qualification</th>
+    </tr>
+    <tr>
+       <td>harsh</td>
+       <td>software engineer</td>
+    </tr>
+    <tr>
+       <td>xyz</td>
+       <td>abc</td>
+    </tr>
+   <tr>
+      <td>
+          <ol>
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+          </ol>
+      </td>
+   </tr>
+
+  </table>
+
+
+</form>
+
+</body>
+</html>
