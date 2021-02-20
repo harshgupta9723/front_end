@@ -4,32 +4,35 @@
         <Title>GRAPH_STRUCTURE</Title>
         
         <style>
-            
-            .node {
-                padding: 300px 500px;
-                    }
+            .his-bar { display: flex; position: relative; padding-top: 50px; width: 100%; margin:auto; margin-top: 40px; }
 
-            ul {
-                position:relative;
-                display:flex;
-                justify-content: space-between;
-                align-items: center;
-                padding: 0;
-                }
+            .his-bar:before { content: ''; border: 1px solid #727272; position: absolute; top: 60px; right: 0; width: 99%; }
+
+            .his-bar .point { border: 2px solid #872071; width: 20px; height: 20px; border-radius: 50%; display: inline-block; background-color: #F8F8F8; z-index: 2; position: relative; }
+
+            .his-bar .point-start:after { content: '2000'; position: absolute; top: 30px; left: -7px; }
+
+            .his-bar .point-end { margin-left: auto; }
+
+            .his-bar .point-end:after { content: '2021'; position: absolute; top: 30px; left: -7px; }
 
         </style>
     </head>  
     <body>
 
-        <div class=node>
-            <svg width="100" height="100">
-                <circle cx="50" cy="50" r="40" stroke="black" stroke-width="2" fill="grey" />
-            </svg>
-        </div>
-        <div>
-            <svg>
-                <line x1="500" y1="500" x2="200" y2="200" style="stroke:black;stroke-width:4" />
-            </svg>
+        <!-- <div id="status-buttons" class="text-center">
+            <a href="#/form/regalo" class="active"><span>1</span> Step 1</a>
+            <div id="line">
+            </div>
+            <a href="#/form/tusdatos"><span>2</span> Step 2</a>
+        </div> -->
+
+        <div class="his-bar">
+            <!-- "SOURCE CODE"
+            https://stackoverflow.com/questions/40077096/how-do-i-draw-a-horizontal-line-between-two-circles-with-css 
+            -->
+            <a href="#/form/regalo"></a> <span class="point point-start">1</span>
+            <span class="point point-end">2</span>
         </div>
 
     </body>
